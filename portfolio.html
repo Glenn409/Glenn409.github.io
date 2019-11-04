@@ -6,24 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Basic Portfolio</title>
 </head>
 <body>
     <!-- creating the nav bar -->
     <nav>
         <div class="nav-container">
-            <div id="name">
-                <h1>Chris Glenn</h1>
-            </div>
-
             <div class='pages'>
-                <p><a href="index.html">About</a></p>
+                <p><a href="aboutMe.html">About</a></p>
                 <p><a href="portfolio.html">Portfolio</a></p>
                 <p><a href="contact.html">Contact</a></p>
             </div>
         </div>
     </nav>
     <!-- -->
+
     <div class="container">
         <h1>Portfolio</h1>
         <div class="img-row">
@@ -51,10 +50,15 @@
     </div>
 
     <!-- creating the footer -->
-    <footer id='footer2'>
+    <!-- <footer id='footer2'>
         <div id='green'></div>
         <div id='copyright'>Copyright &#169;</div>
-    </footer>
+    </footer> -->
     
 </body>
+    <script>
+        $(document).ready(function(){
+            $('.container').fadeIn(1300);
+        })
+    </script>
 </html>

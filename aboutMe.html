@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel='stylesheet' type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&display=swap" rel="stylesheet">
+    <title>Basic Portfolio</title>
+</head>
+<body>
+    <!-- creating the nav bar -->
+    <nav>
+        <div class="nav-container">
+            <div class='pages'>
+                <p><a href="aboutMe.html">About</a></p>
+                <p><a href="portfolio.html">Portfolio</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </div>
+    </nav>
+    
+    <div class='container this'>
+     <h1>About Me</h1>
+        <div class='first-row'>
+            <img src='images/Glenn2.png' alt="Chris Glenn">
+            <p  style='text-indent: 30px;'>Hi my name is Christopher Glenn (I'm on the right!). Some history about me, I was first introduced to programming in College.
+                 I went to Missouri State for computer science. My reason for pursuing computer science was because it had the word "computer"
+                  in its name and that I grew up on a computer as a kid. The skills I learned at school were:<br>- Python<br>- C#</p>
+
+        </div>
+        <div class='second-row'>
+            <p class="para" style='text-indent: 30px;'>I spent two years there, I ended up hating college but felt the opposite about programming.
+                 I decided to drop out, I had no further interest in school.
+                  So I moved back home worked at a lake bar in Lake of the Ozarks, Missouri.
+                  This is where I spent alot of my time growing up and maturing.</p>
+
+            <p class='para' style='text-indent: 30px;'>
+                After a while, during the off seasons at work I started to learn how to program on my own terms learning through Codecademy. I ended up getting three certificates from Codecademy: <a target='_blank' id='certs' href='https://www.credential.net/profile/christopher834/wallet'>Link to my Certificates.</a>
+                <br><br>- Build Front-End Web Apps from Scratch
+                <br>- Build Web APIs from Scratch
+                <br>- Freelance Website Developement
+            </p>
+            <p class='para third' style='text-indent: 30px;'>
+                The languages I felt like I had a strong grasp of and had alot of experience using because of Codecademy are:
+                <div style='display:flex; justify-content: space-around;'>
+                    <p>-Html/CSS<br>-Javascript<br>-Node<br>-Express.js</p>
+                    <p>-ReactJS<br>-SQL<br>-Python</p>    
+                </div>
+            </p>
+
+            <p class="para" style='text-indent: 30px;'>After sometime I recieved a promotion at work and business started to pick up, I had to put down programming for a bit.
+                Which now finally brings us to this year. I realized I want to challenge and push myself further. I want to find a career that I can build on.
+                I chose to get back into programming because I find it complex, fun, and I love the sense of accomplishment when you build something.
+                So I decided to move to the Kansas City area and enrolled into Kansas University's Full Stack Developer Bootcamp where I hope I can pursue a career in programming.
+            </p>
+        </div>
+    </div>
+
+</body>
+    <script>
+        $(document).ready(function(){
+            $('.container').fadeIn(1300);
+        })
+    </script>
+</html>
