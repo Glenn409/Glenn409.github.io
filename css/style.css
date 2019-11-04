@@ -87,7 +87,7 @@ img {
 }
 .img-row{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 
 }
 .img1 {
