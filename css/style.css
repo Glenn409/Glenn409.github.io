@@ -80,12 +80,17 @@ img {
 }
 .img-box {
     cursor: pointer;
-    margin:10px 10px 10px 10px;
-    width:250px;
-    height:200px;
+    margin:10px 20px 10px 5px;
+    width:300px;
+    height:250px;
     position:relative;
+    border:5px solid black;
+    border-radius:20px;
 }
 .img-row{
+    padding-bottom:20px;
+    margin-bottom:20px;
+    border-bottom:2px solid grey;
     display:flex;
     justify-content: flex-start;
 
@@ -112,6 +117,24 @@ img {
 .img5 {
     background-image:url('../images/scissors.jpg');
     background-size:cover;
+}
+.class-img1{
+    background-image:url('../images/survey.jpg');
+    background-position: center;
+    background-size:cover;
+}
+.class-img2{
+    background-image:url('../images/cli.jpg');
+    background-position: center;
+    background-size:cover;
+}
+.class-img3{
+    background-image:url('../images/giftastic.png');
+    background-position: center;
+    background-size:cover;
+}
+.img-row-info{
+    width:100%;
 }
 .img-banner{
     font-size:1.1em;
@@ -170,7 +193,11 @@ img {
     font-weight: 400;
     letter-spacing: 1px;
 }
-
+.container-project{
+    margin-bottom:150px;
+    padding-top:15px;
+    background-color:rgba(70,70,70,.7)
+}
 .first-row img{
     width:325px;
     height:auto;
@@ -253,7 +280,33 @@ img {
     font-size:14px;
 
 }
-
+.description{
+    padding-bottom:10px;
+    border-bottom:1px solid #888;
+    margin-bottom:20px;
+}
+.project-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.lang{
+    margin-left:10px;
+    margin-right:10px;
+    display:inline-block;
+    padding:5px 5px 5px 5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:grey;
+    box-shadow: 3px 5px #222;
+}
+.skills{
+    margin-bottom: 15px;
+}
+.works{
+    margin-top:15px;
+    color:red;
+}
 @media only screen and (max-width:980px){
     .nav-container{
         width:85%;
@@ -274,6 +327,7 @@ img {
         position:relative;
 
     }
+
 @media only screen and (max-width:768px){
     
 }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Basic Portfolio</title>
+</head>
+<body>
+    <!-- creating the nav bar -->
+    <nav>
+        <div class="nav-container">
+            <div class='pages'>
+                <p><a href='index.html'>Home</a></p>
+                <p><a href="aboutMe.html">About</a></p>
+                <p><a href="personal.html">Personal Projects</a></p>
+                <p><a href='class.html'>Class Projects</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </div>
+    </nav>
+    <!-- -->
+
+    <div class="container container-project">
+        <h1>Portfolio</h1>
+
+        <div class="img-row">
+            <a target='_blank' href='https://glenn409.github.io/thisIsIt/'>
+                <div class="img-box img1">
+                    <p class="img-banner">Frisson</p>
+                </div>
+            </a>
+            <div class='img-row-info'>
+                    <!-- <p class='title'>Frisson</p> -->
+                    <p>Description:</p>
+                    <p class='description'>- Search a Artist and It will generate a playlist similar to your artist.</p>
+                    <p class='skills'>- Skills Used:</p>
+                    <ul class='project-list'>
+                        <li class='lang'>Javascript</li>
+                        <li class="lang">Html/Css</li>
+                        <li class="lang">MusixMatch Api</li>
+                        <li class="lang">Itunes Api</li>
+                    </ul>
+                    <p class='github-link'></p>
+                    <p class='works'>* currently working on *</p>
+                </div>
+        </div>
+
+        <div class="img-row">
+            <a target='_blank' href='https://friend-finder-glenn409.herokuapp.com/'>
+                <div class='img-box class-img1'>
+                    <p class='img-banner'>Friend Finder</p>
+                </div>
+                <p class='github-link'></p>
+            </a>
+            <div class='img-row-info'>
+                <p>Description</p>
+                <p class='description'>- A survey that allows you to find a friend with similar survey results.</p>
+                <p class='skills'>- Skilled Used:</p>
+                <ul class='project-list'>
+                    <li class='lang'>Javascript</li>
+                    <li class='lang'>Heroku</li>
+                    <li class='lang'>NodeJs</li>
+                    <li class='lang'>Express</li>
+                </ul>
+                <p class='works'></p>
+            </div>
+        </div>
+
+        <div class="img-row">
+            <a target='_blank' href='https://github.com/Glenn409/liri-node-app'>
+                <div class='img-box class-img2'>
+                    <p class='img-banner'>LIRI Bot</p>
+                </div>
+                <p class='github-link'></p>
+            </a>
+            <div class='img-row-info'>
+                <p>Description</p>
+                <p class='description'>- a Command line application that makes Api requests based which option is chosen.</p>
+                <p class='skills'>- Skilled Used:</p>
+                <ul class='project-list'>
+                    <li class='lang'>Javascript</li>
+                    <li class='lang'>NodeJ</li>
+                    <li class='lang'>Axios</li>
+                    <li class='lang'>Moment.js</li>
+                    <li class="lang">file-system</li>
+                    <li class="lang">Node-spotify-Api</li>
+                    <li class="lang">OMDB Api</li>
+                    <li class="lang">Bands In Town Api</li>
+                </ul>
+                <p class='works'></p>
+            </div>
+        </div>
+
+        <div class="img-row">
+            <a target='_blank' href='https://glenn409.github.io/GifTastic/'>
+                <div class='img-box class-img3'>
+                    <p class='img-banner'>GiftTastic</p>
+                </div>
+                <p class='github-link'></p>
+            </a>
+            <div class='img-row-info'>
+                <p>Description</p>
+                <p class='description'>- A website that allows a user to search Gifs!</p>
+                <p class='skills'>- Skilled Used:</p>
+                <ul class='project-list'>
+                    <li class='lang'>Giphy Api</li>
+                    <li class='lang'>Axios</li>
+                    <li class='lang'>Javascript</li>
+                    <li class='lang'>Html/Css</li>
+                </ul>
+                <p class='works'></p>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="img-row">
+            <a target='_blank' href=''>
+                <div class='img-box img2'>
+                    <p class='img-banner'></p>
+                </div>
+                <p class='github-link'></p>
+            </a>
+            <div class='img-row-info'>
+                <p>Description</p>
+                <p class='description'>Insert description here</p>
+                <p class='skills'>- Skilled Used:</p>
+                <ul class='project-list'>
+                    <li class='lang'></li>
+                    <li class='lang'></li>
+                    <li class='lang'></li>
+                    <li class='lang'></li>
+                </ul>
+                <p class='works'></p>
+            </div>
+        </div> -->
+
+    </div>
+
+
+</body>
+    <script>
+        $(document).ready(function(){
+            $('.container').fadeIn(1300);
+        })
+    </script>
+</html>
