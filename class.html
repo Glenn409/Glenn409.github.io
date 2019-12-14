@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href='css/style.css'>
+    <link rel='stylesheet' type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href='./css/style.css'>
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Basic Portfolio</title>
 </head>
@@ -15,11 +17,21 @@
     <nav>
         <div class="nav-container">
             <div class='pages'>
-                <p><a href='index.html'>Home</a></p>
                 <p><a href="aboutMe.html">About</a></p>
                 <p><a href="personal.html">Personal Projects</a></p>
                 <p><a href='class.html'>Class Projects</a></p>
                 <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class='dropdown'>
+                <button class="dropbtn">
+                        Class Projects <i class="fa fa-caret-down"></i>
+                </button>
+                <div class='dropdown-content'>
+                    <p><a href="aboutMe.html">About</a></p>
+                    <p><a href="personal.html">Personal Projects</a></p>
+                    <p><a href='class.html'>Class Projects</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
             </div>
         </div>
     </nav>
@@ -29,12 +41,15 @@
         <h1>Portfolio</h1>
 
         <div class="img-row">
-            <a target='_blank' href='https://friend-finder-glenn409.herokuapp.com/'>
-                <div class='img-box class-img1'>
-                    <p class='img-banner'>Friend Finder</p>
-                </div>
-                <p class='github-link'></p>
-            </a>
+            <div class='githubbox'>
+                <a target='_blank' href='https://friend-finder-glenn409.herokuapp.com/'>
+                    <div class='img-box class-img1'>
+                        <p class='img-banner'>Friend Finder</p>
+                    </div>
+                    <p class='github-link'></p>
+                </a>
+                <a class='github-link' target='_blank' href='https://github.com/Glenn409/Friend-Finder'>- Github Link -</a>
+          </div>  
             <div class='img-row-info'>
                 <p>Description</p>
                 <p class='description'>- A survey that allows you to find a friend with similar survey results.</p>
@@ -51,12 +66,15 @@
         </div>
 
         <div class="img-row">
-            <a target='_blank' href='https://github.com/Glenn409/bamazon'>
-                <div class='img-box class-img2'>
-                    <p class='img-banner'>Bamazon</p>
-                </div>
-                <p class='github-link'></p>
-            </a>
+            <div class='githubbox'>
+                <a target='_blank' href='https://github.com/Glenn409/bamazon'>
+                    <div class='img-box class-img2'>
+                        <p class='img-banner'>Bamazon</p>
+                    </div>
+                    <p class='github-link'></p>
+                </a>
+                <a class='github-link' target='_blank' href='https://github.com/Glenn409/bamazon'>- Github Link -</a>
+            </div>
             <div class='img-row-info'>
                 <p>Description</p>
                 <p class='description'>- A Command line application that simulates how a retail store would use a database.</p>
@@ -72,12 +90,15 @@
         </div>
 
         <div class="img-row">
-            <a target='_blank' href='https://github.com/Glenn409/liri-node-app'>
-                <div class='img-box class-img3'>
-                    <p class='img-banner'>LIRI Bot</p>
-                </div>
-                <p class='github-link'></p>
-            </a>
+            <div class='githubbox'>
+                <a target='_blank' href='https://github.com/Glenn409/liri-node-app'>
+                    <div class='img-box class-img3'>
+                        <p class='img-banner'>LIRI Bot</p>
+                    </div>
+                    <p class='github-link'></p>
+                </a>
+                <a class='github-link' target='_blank' href='https://github.com/Glenn409/liri-node-app'>- Github Link -</a>
+            </div>
             <div class='img-row-info'>
                 <p>Description</p>
                 <p class='description'>- a Command line application that makes Api requests based which option is chosen.</p>
@@ -97,12 +118,15 @@
         </div>
 
         <div class="img-row">
+            <div class='githubbox'>
             <a target='_blank' href='https://glenn409.github.io/GifTastic/'>
                 <div class='img-box class-img4'>
                     <p class='img-banner'>GiftTastic</p>
                 </div>
                 <p class='github-link'></p>
             </a>
+            <a class='github-link' target='_blank' href='https://github.com/Glenn409/GifTastic'>- Github Link -</a>
+        </div>
             <div class='img-row-info'>
                 <p>Description</p>
                 <p class='description'>- A website that allows a user to search Gifs!</p>
@@ -119,12 +143,15 @@
         </div>
 
         <div class="img-row">
+            <div class='githubbox'>
             <a target='_blank' href='https://glenn409.github.io/TriviaGame/'>
                 <div class='img-box class-img5'>
                     <p class='img-banner'>Halloween Trivia</p>
                 </div>
                 <p class='github-link'></p>
             </a>
+            <a class='github-link' target='_blank' href='https://github.com/Glenn409/TriviaGame'>- Github Link -</a>
+        </div>
             <div class='img-row-info'>
                 <p>Description</p>
                 <p class='description'>- Trivia Game with halloween topics</p>

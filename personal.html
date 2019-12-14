@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href='css/style.css'>
+    
+    <link rel='stylesheet' type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href='./css/style.css'>
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Basic Portfolio</title>
+    <title>Chris Glenn's Portfolio</title>
 </head>
 <body>
     <!-- creating the nav bar -->
     <nav>
         <div class="nav-container">
             <div class='pages'>
-                <p><a href='index.html'>Home</a></p>
                 <p><a href="aboutMe.html">About</a></p>
                 <p><a href="personal.html">Personal Projects</a></p>
                 <p><a href='class.html'>Class Projects</a></p>
                 <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class='dropdown'>
+                <button class="dropbtn">
+                        Personal Projects <i class="fa fa-caret-down"></i>
+                </button>
+                <div class='dropdown-content'>
+                    <p><a href="aboutMe.html">About</a></p>
+                    <p><a href="personal.html">Personal Projects</a></p>
+                    <p><a href='class.html'>Class Projects</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
             </div>
         </div>
     </nav>
@@ -30,16 +42,16 @@
 
         <div class="img-row">
             <div class='githubbox'>
-            <a target='_blank' href='https://glenn409.github.io/Fission/'>
-                <div class="img-box img1">
-                    <p class="img-banner">Frisson</p>
-                </div>
-            </a>
-            <a class='github-link' target='_blank' href='https://github.com/Glenn409/Fission'>- Github Link -</a>
+                <a target='_blank' href='https://glenn409.github.io/Fission/'>
+                    <div class="img-box img1">
+                        <p class="img-banner">Frisson</p>
+                    </div>
+                </a>
+                <a class='github-link' target='_blank' href='https://github.com/Glenn409/Fission'>- Github Link -</a>
             </div>
             <div class='img-row-info'>
-                    <!-- <p class='title'>Frisson</p> -->
-                    <p>Description:</p>
+                    <p class='title'>Frisson</p>
+                    <!-- <p>Description:</p> -->
                     <p class='description'>- Search a Artist and It will generate a playlist similar to your artist!</p>
                     <p class='skills'>- Skills Used:</p>
                     <ul class='project-list'>
@@ -54,12 +66,15 @@
         </div>
 
         <div class="img-row">
-            <a target='_blank' href='https://github.com/Glenn409/battleships-node-app'>
-                <div class='img-box img2'>
-                    <p class='img-banner'>Command Line Battleship</p>
-                </div>
-                <p class='github-link'></p>
-            </a>
+            <div class='githubbox'>
+                <a target='_blank' href='https://github.com/Glenn409/battleships-node-app'>
+                    <div class='img-box img2'>
+                        <p class='img-banner'>Command Line Battleship</p>
+                    </div>
+                    <p class='github-link'></p>
+                </a>
+                <a class='github-link' target='_blank' href='https://github.com/Glenn409/battleships-node-app'>- Github Link -</a>
+            </div>
             <div class='img-row-info'>
                 <p>Description</p>
                 <p class='description'>- A Command Line application that simulates a singleplayer battleship written with a computer AI</p>
@@ -73,12 +88,15 @@
         </div>
 
         <div class="img-row">
-            <a target='_blank' href='https://github.com/Glenn409/Invite-Bot'>
-                <div class='img-box img3'>
-                    <p class='img-banner'>Discord Invite Bot</p>
-                </div>
-                <p class='github-link'></p>
-            </a>
+            <div class="githubbox">
+                <a target='_blank' href='https://github.com/Glenn409/Invite-Bot'>
+                    <div class='img-box img3'>
+                        <p class='img-banner'>Discord Invite Bot</p>
+                    </div>
+                    <p class='github-link'></p>
+                </a>
+                <a class='github-link' target='_blank' href='https://github.com/Glenn409/Invite-Bot'>- Github Link -</a>
+            </div>
             <div class='img-row-info'>
                 <p>Description</p>
                 <p class='description'>- A Discord Bot that would track the amount of users a individual user have invited into a server and would set roles/permissions to that user based on the amount.</p>

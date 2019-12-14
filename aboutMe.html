@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel='stylesheet' type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href='css/style.css'>
+    <link rel='stylesheet' type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href='./css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&display=swap" rel="stylesheet">
     <title>Basic Portfolio</title>
 </head>
@@ -15,16 +16,26 @@
     <nav>
         <div class="nav-container">
             <div class='pages'>
-                <p><a href='index.html'>Home</a></p>
                 <p><a href="aboutMe.html">About</a></p>
                 <p><a href="personal.html">Personal Projects</a></p>
                 <p><a href='class.html'>Class Projects</a></p>
                 <p><a href="contact.html">Contact</a></p>
             </div>
+            <div class='dropdown'>
+                <button class="dropbtn">
+                        About Me <i class="fa fa-caret-down"></i>
+                </button>
+                <div class='dropdown-content'>
+                    <p><a href="aboutMe.html">About</a></p>
+                    <p><a href="personal.html">Personal Projects</a></p>
+                    <p><a href='class.html'>Class Projects</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+            </div>
         </div>
     </nav>
     
-    <div class='container this'>
+    <div class='container this container-project'>
      <h1>About Me</h1>
         <div class='first-row'>
             <img src='images/Glenn2.png' alt="Chris Glenn">
@@ -48,7 +59,7 @@
 
             <p class="para" style='text-indent: 30px;'>After sometime I recieved a promotion at work and business started to pick up, I had to put down programming for a bit.
                 Which now finally brings us to this year. I realized I want to challenge and push myself further. I want to find a career that I can build on.
-                I chose to get back into programming because I find it complex, fun, and I love the sense of accomplishment when you build something.
+                I decided to get back into programming because I find it complex, fun, and I love the sense of accomplishment when you build something.
                 So I decided to move to the Kansas City area and enrolled into Kansas University's Full Stack Developer Bootcamp where I hope I can pursue a career in programming.
             </p>
 

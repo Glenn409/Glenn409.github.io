@@ -8,6 +8,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+h2{
+    font-size:30px;
+}
 /* ----------------NAV BAR CONTENT -------------- */
 .nav-container {
     height:100px;
@@ -17,6 +20,9 @@ body {
     width:90%;
     display:flex;
     justify-content: flex-end;
+}
+.dropdown{
+    display:none;
 }   
 .pages{
     display:flex;
@@ -86,6 +92,10 @@ img {
     position:relative;
     border:5px solid black;
     border-radius:20px;
+}
+.img-box:hover{
+    border:5px solid white;
+    opacity: .9;
 }
 .img-row{
     padding-bottom:20px;
@@ -203,9 +213,10 @@ img {
     letter-spacing: 1px;
 }
 .container-project{
+    padding-bottom:25px;
     margin-bottom:150px;
     padding-top:15px;
-    background-color:rgba(70,70,70,.7)
+    background-color:rgba(70,70,70,.7);
 }
 .first-row img{
     width:325px;
@@ -248,7 +259,7 @@ img {
 #langlist{
     padding-bottom:40px;
 }
-#certs, .github-link{
+#certs, .github-link,#glink{
     text-decoration: none;
     color: lightskyblue;
 }
@@ -260,6 +271,10 @@ img {
 .github-link{
     display:flex;
     justify-content: center;
+}
+.github-link:hover{
+    cursor:pointer;
+    color: rgba(0, 255, 255, 0.5);
 }
 /* ---------------------------- */
 
@@ -327,32 +342,112 @@ img {
 .works{
     margin-top:15px;
     color:red;
+    text-align: center;
+
 }
-@media only screen and (max-width:980px){
+
+@media screen and (max-width:1300px){
     .nav-container{
-        width:85%;
-        margin:auto;
+        width:70%;
+        border-bottom: 2px solid grey;
+    }
+    .pages{
+        width:100%;
+        justify-content: space-evenly;
     }
     .container{
-        width:85%;
+        width:70%;
     }
+    .this{
+        font-size:20px;
+    }
+}
+@media screen and (max-width:1200px){
     img{
-        width: 225px;
-        height:200px;
-}
-    .container{
-    
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:15px;
     }
-    #footer{
-        bottom:0;
-        position:relative;
-
+    .first-row{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1100px){
+    .img-row{
+        flex-direction:column;
+    }
+    .img-box{
+        width:350px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .github-link{
+        margin-bottom:15px;
     }
 
-@media only screen and (max-width:768px){
-    
+}
+@media  screen and (max-width:800px){
+    .nav-container{
+        justify-content: center;
+        width:100%;
+        margin-left:none;
+        margin-right:none;
+        border-bottom: 2px solid grey;
+    }
+    .container {
+        width:80%;
+    }
+    .img-box{
+        width:300px;
+    }
+}
+@media screen and (max-width:600px){
+    .pages{
+        display:none;
+    }
+    .dropdown{
+        width:100%;
+        display: block;
+    }
+    .dropbtn{
+        border:none;
+        color:white;
+        font-size: 20px;
+        background-color:transparent;
+        width:100%;
+        height:50px;
+    }
+    .dropdown-content{
+        width:100%;
+        background-color:white;
+        position: absolute;
+        z-index: 1;
+        display:none;
+    }
+    .dropdown-content a{
+        text-decoration: none;
+        color:black;
+    }
+    .dropdown-content p{
+        padding:10px 10px 10px 10px;
+        font-size:20px;
+    }
+    .dropdown-content p:hover{
+        background-color:gray;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .nav-container{
+        display:flex;
+        justify-content: right;   
+        height:50px;
+        padding-top:0px;
+      }
 }
 
-@media only screen and (max-width:640px){
-    
+@media screen and (max-width:500px){
+    .img-box{
+        width:80%;
+    }
 }
