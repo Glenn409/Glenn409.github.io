@@ -371,6 +371,8 @@ img {
     .first-row{
         flex-direction: column;
     }
+    #resume{
+        width:100%
 }
 @media screen and (max-width:1100px){
     .img-row{
