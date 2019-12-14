@@ -339,6 +339,12 @@ img {
 .skills{
     margin-bottom: 15px;
 }
+.title{
+    font-size:25px;
+    font-weight: 600;
+    margin-bottom:10px;
+    text-align: center;
+}
 .works{
     margin-top:15px;
     color:red;
