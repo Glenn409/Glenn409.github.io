@@ -110,6 +110,11 @@ img {
     background-position: center;
     background-size:cover;
 }
+.img10{
+    background-image:url('../images/bank-flat.png');
+    background-position:center;
+    background-size:cover;
+}
 .img2{
     background-color:white;
     background-image:url('../images/battleship.png');
